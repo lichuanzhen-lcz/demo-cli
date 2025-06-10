@@ -20,7 +20,8 @@ index.js 文件中输入 console.log("hello world")
 ### (2): 配置自定义命令
 
 在 package.json 中配置自定义命令，在 bin 中添加 run 的指令执行 index.js
-image.png
+
+<img src=".\public\images\1749520793743.jpg">
 
 ### (3): 指令连接全局
 
@@ -34,10 +35,10 @@ npm unlink
 
 ## 1：原生获取命令行参数的方式 使用：process.argv 关键字
 
-image.png
-image.png
+<img src=".\public\images\1749521143625.jpg">  
+<img src=".\public\images\1749521173204.jpg">  
 可以通过空格添加多个命令：run a b c
-image.png
+<img src=".\public\images\1749521277260.jpg">
 
 ## 2：使用包 Commander.js 模块来获取处理命令行参数
 
@@ -48,7 +49,7 @@ Commander.js 中文文档：https://github.com/tj/commander.js/blob/HEAD/Readme_
 npm install commander
 通过命令： run -V 获取版本号
 同理直接输入 run 会弹出选项提示
-image.png
+<img src=".\public\images\1749523049895.jpg">
 
 ## 3：设计自己的命令行参数
 
@@ -197,7 +198,7 @@ message: "请输入作者名称",
 console.log(answers.author);
 });
 
-image.png
+<img src=".\public\images\E3DC3093-E1C5-40BD-B98F-7D7F3B8059A2.png">
 
 ## 2：使用 handlebars 生成模板
 
