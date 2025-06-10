@@ -1,13 +1,13 @@
 {
-  "name": "gcjg-cli",
+  "name": "demo-cli",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
   "version": "1.0.1",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "type": "module",
   "bin": {
