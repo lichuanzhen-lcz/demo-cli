@@ -55,29 +55,29 @@ npm install commander
 
 ### (1): init 初始化模板命令
 
-// init 命令 run init
-program  
- // 定义命令：.command(命令名，[参数])  
- // []：表示可选参数  
- // <>：表示必填参数  
- .command("init <templateName> <projectName>")  
- // 命令别名  
- .alias("i")  
- // 命令作用介绍  
- .description("初始化项目模板")  
- // 可接在此命令之后连用的指令  
- .option("-i, --init <name>", "命令后使用选项接参数示例", "normal")  
- // 命令执行回调  
- .action((templateName, projectName, options) => {  
- // templateName：传给本项命令的参数  
- // projectName：传给本项命令的第二个参数  
- // options.\*\*\*：传给命令之后使用的指令的参数（option.init）  
- console.log(
-`使用模板名：${templateName}, 项目名称为：${projectName}, ${
-						options.init === "normal" ? "" : `选项参数为：${options.init}`
-					}`
-);  
- });
+    	// init 命令 run init
+    	program
+    	// 定义命令：.command(命令名，[参数])
+    	// []：表示可选参数
+    	// <>：表示必填参数
+    	.command("init <templateName> <projectName>")
+    	// 命令别名
+    	.alias("i")
+    	// 命令作用介绍
+    	.description("初始化项目模板")
+    	// 可接在此命令之后连用的指令
+    	.option("-i, --init <name>", "命令后使用选项接参数示例", "normal")
+    	// 命令执行回调
+    	.action((templateName, projectName, options) => {
+    	// templateName：传给本项命令的参数
+    	// projectName：传给本项命令的第二个参数
+    	// options.\*\*\*：传给命令之后使用的指令的参数（option.init）
+    	console.log(
+    	`使用模板名：${templateName}, 项目名称为：${projectName}, ${
+    							options.init === "normal" ? "" : `选项参数为：${options.init}`
+    						}`
+    	);
+    	});
 
     ### (2): list 查看模板命令
     // list 命令
